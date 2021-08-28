@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object Notation</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Hello API</h1>
+
+    <div style="background-color: yellow; border: 2px solid red; margin: 10px; padding: 10px;">
+
+        <br>
+        <div style="font-weight: 600; font-style: oblique;">
+            // JSON = Javascript Object Notation
+        </div>
+        <br>
+        // convert object to string with JSON.stringify
+        <br>
+        const products = {
+        name: 'kitkat',
+        id: 12,
+        price: 60,
+        shop: 'mamur dokan',
+        numbers: [
+        21, 32, 43, 54, 65, 76, 87, 98
+        ],
+        location: 'Savar',
+        user: {
+        name: 'Rabbi',
+        age: 27,
+        position: 'manager',
+        salary: 20000,
+        },
+        profit: 150000,
+        members: {
+        'Abdul',
+        'Karim',
+        'Jabir',
+        'Hasan'
+        }
+        };
+        <br>
+        console.log(products);
+        <br>
+        const stringify1 = JSON.stringify(products);
+        <br>
+        console.log(stringify1);
+        <br>
+
+        const stringify2 = JSON.stringify(products.numbers);
+        <br>
+        console.log(stringify2);
+        <br>
+
+        const stringify3 = JSON.stringify(products.user);
+        <br>
+        console.log(stringify3);
+        <br>
+
+        // convert string to object with JSON.parse
+        <br>
+        const convertedString = JSON.parse(stringify1);
+        <br>
+        console.log(convertedString);
+        <br>
+        <br>
+
+    </div>
+
+
+    <script src="json.js"></script>
+    <script src="api.js"></script>
+</body>
+
+</html>
